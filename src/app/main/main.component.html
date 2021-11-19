@@ -1,0 +1,11 @@
+<div  style="text-align: center;">
+<h1>Infix to Postfix converter</h1>
+<h4>Please input only well balanced string and no spaces!</h4>
+<h5>Eg: 1+2-(4*3)-8 or A+B-C*D</h5>
+<form style="text-align: center;" #registerForm="ngForm" (ngSubmit)="calc(registerForm)">
+  <input type="text" name="str" ngModel >
+  <button type="submit">Submit</button>
+</form>
+
+<h2 style="text-align: center;">Postfix = {{this.ans}}</h2>
+</div>
