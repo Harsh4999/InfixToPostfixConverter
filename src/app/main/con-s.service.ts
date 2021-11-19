@@ -9,6 +9,6 @@ export class ConSService {
   constructor(private http:HttpClient) { }
 
   getDate(s:string){
-    return this.http.get(`http://localhost:8080/calc/${s}`);
+    return this.http.get(`https://infixtopostfixbackend.herokuapp.com/calc/${s}`);
   }
 }
